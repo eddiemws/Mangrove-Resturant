@@ -1,0 +1,667 @@
+*{  
+    padding: 0;
+    margin: 0;
+    
+    
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    height: 80px;
+    width: 100%;  
+    z-index: 9999; 
+}
+label.logo {
+    color: aqua;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul {
+    float: right;
+    margin-right: 1em;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+color: white;
+font-size: 17px;
+border-radius: 3px;
+padding: 7px 13px;
+}
+a.active,a:hover {
+    background: #47c3e9;
+    transition: .5s;
+} 
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+
+@media (max-width: 952px) {
+    label.logo{
+        font-size: 20px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+       
+}
+
+@media (max-width: 858px){
+
+    .checkbtn{
+        display: block;
+    }
+     nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: url(karencont3.jpg) no-repeat;
+        background-size: cover;
+        height: calc(100vh - 80px);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul {
+      height: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin:  50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .home-text{
+       grid-column: 1 ;
+       grid-template-columns: 1fr;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       height: auto;
+    }
+   
+    .home-text  h1 , h4 , p  {
+       
+        font-weight: 100;
+        text-align: center;
+    }
+    .home-text h1 {
+        font-size: 30px;
+    }
+    .wallpaper{
+        height: 100%;
+        display: fle;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .wallpaper img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;      
+        
+    }
+    
+}
+
+
+
+       /*........Home..........*/
+
+.theme{
+    
+    background: url("wallpaper.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.home{
+    background-color: gold;
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    align-items: center;
+    gap: 1rem;
+    margin-left: 30px;
+    padding:20px;   
+    background: url("wallpaper.webp");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+
+
+
+.home-text h4{
+font-size: 20px;
+font-weight: bold;
+letter-spacing: -1px;
+font-family: Arial, Helvetica, sans-serif;
+color: aquamarine;
+}
+
+.home-text h1 {
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: var(--ff-accent);
+    line-height: 1.2;
+    margin: 23px 0;
+}
+
+span {
+    color: #cc3333;
+    text-decoration: underline;
+}
+
+.home-text p {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    
+    line-height: 1.2;
+    margin: 23px 0;
+    
+}
+
+
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.button .btn1 {
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    background-color: #cc3333;
+    padding: 12px 30px;
+    transition: all .20s ease;
+
+}
+
+
+
+.btn2 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #e91fac;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    background: wheat;
+    
+}
+
+.btn2 i {
+    height: 50px;
+    width: 50px;
+    background: #cc3333;
+    color: whitesmoke;
+    font-size: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all .42s ease;
+}
+.button .btn1:hover {
+    background-color: #47c3e9;
+    transform: translateY(-15px);
+}
+.button .btn2:hover {
+    background-color: #cc3333;
+    transform: translateX(30px); 
+    
+}
+.btn2 i:hover{
+    transform: translateY(-10px);  
+    background: #47c3e9;
+    
+    
+}
+
+.wallpaper{
+    height: auto;
+    width: 90%;
+}
+
+.wallpaper img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+
+}
+.wallpaper1 img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 20%;
+
+}
+.wallpaper2 img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 60%;
+
+}
+
+                 /*.......REVIEWS & SECTION......*/
+.reviewsection{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-image: linear-gradient(30deg, #fff, #16d10f, #e6d00e, #e91fac );
+    margin-bottom: 50px;
+    width: 100%;
+    border-radius: 10%;
+    
+   
+}
+
+.reviews {
+    font-size: clamp(2rem, 5vw + 1rem, 5rem);
+    line-height: 1;
+    color: aqua;
+    background-image: linear-gradient(30deg, #fff, #16d10f, #e6d00e, #e91fac );
+    padding: 0.125em 0.5em;
+    margin-bottom: 1em;
+    width: fit-content;
+  }
+
+.revcontainer{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    
+}
+.revcontainer .mycard{
+    position: relative;
+    max-width: 300px;
+    height: 200px;
+    background: wheat;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 50px #e4ebe5fb;
+    transition: 0.4s ease-in-out;
+
+}
+.revcontainer .mycard:hover{
+    height: 500px;
+}
+ 
+.revcontainer .mycard .cimg{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 3px 50px rgba(0,0,0,0.5);
+
+}
+
+.revcontainer .mycard .cimg .img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    
+}
+
+.revcontainer .mycard .cdetail{
+
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    font-family: monospace;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+
+}
+
+.revcontainer .mycard:hover .cdetail{
+    visibility: visible;
+    opacity: 10;
+    margin-top: 10px;
+
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+/*gallery*/
+
+:root {
+    --ff-primary: Heebo, sans-serif;
+    --ff-secondary: Bungee, cursive;
+    --ff-accent: Bungee Shade, cursive;
+  }
+  
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Remove default margin */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--ff-secondary);
+  }
+  
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none;
+  }
+  
+  /* Set core root defaults */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+ 
+  
+  .container {
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+  }
+  
+  .stacked {
+    display: grid;
+  }
+  
+  .stacked > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .product-grid {
+    display: grid;
+    gap: 0.125rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  
+  .card {
+    aspect-ratio: 1 / 1.5;
+  }
+  
+  .card__content {
+    background: white;
+    align-self: end;
+    margin: 0.5rem 0.5rem 2rem;
+    padding: 0.5rem;
+    box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 0.1);
+  }
+  
+  .card__title {
+    font-size: 1.25rem;
+    line-height: 1.1;
+    color: firebrick;
+  }
+  
+  .card__price {
+    font-size: 1.75rem;
+  }
+  
+  .card__img {
+    width: 100%;
+    aspect-ratio: 1 / 1.25;
+    object-fit: cover;
+  }
+  
+  @media (min-width: 60em) {
+    .card__img {
+      aspect-ratio: 1 / 1;
+    }
+  
+    .card.featured {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+  
+    .card.featured .card__img {
+      aspect-ratio: 1 / 1.25;
+    }
+  
+    .card.featured .card__title {
+      font-size: 1.75rem;
+    }
+  }
+  
+  .main-title {
+    font-size: clamp(2rem, 5vw + 1rem, 5rem);
+    line-height: 1;
+    color: aqua;
+    background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    padding: 0.125em 0.5em;
+    margin-bottom: 1em;
+    width: fit-content;
+  }
+  
+  p.max-content {
+    width: max-content;
+  }
+  
+  p.min-content {
+    width: min-content;
+  }
+
+
+  /*......FOOTER...*/
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+  
+  
+.footercontainer{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
