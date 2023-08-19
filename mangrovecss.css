@@ -150,6 +150,7 @@ a.active,a:hover {
     background: url("wallpaper.webp");
     background-repeat: no-repeat;
     background-size: cover;
+	padding: 5%;
 }
 
 
@@ -317,6 +318,7 @@ span {
     padding: 0.125em 0.5em;
     margin-bottom: 1em;
     width: fit-content;
+	margin: 1em;
   }
 
 .revcontainer{
