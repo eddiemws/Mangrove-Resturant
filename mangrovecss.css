@@ -7,6 +7,9 @@
     list-style: none;
     box-sizing: border-box;
 }
+body {
+	background:black;
+}
 
 nav {
     position: fixed;
@@ -165,7 +168,7 @@ a.active,a:hover {
     gap: 1rem;
     margin-left: 30px;
     padding:20px;   
-    background: url("wallpaper.webp");
+    background: url("wallpaper2.webp");
     background-repeat: no-repeat;
     background-size: cover; 
     
