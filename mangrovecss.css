@@ -1,15 +1,20 @@
 *{  
     padding: 0;
     margin: 0;
-    
-    
+    max-width: 100%;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+   
 }
+
+
 body {
-	background:black;
+ 
+  background: black;
+  
 }
+
 
 nav {
     position: fixed;
@@ -145,15 +150,15 @@ a.active,a:hover {
 }
 
 
-
        /*........Home..........*/
 
 .theme{
     
     background: url("wallpaper.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-	padding: 5%;
+    
+    
+    padding: 5%;
+    border-radius: 3%;
 }
 
 
@@ -169,8 +174,10 @@ a.active,a:hover {
     margin-left: 30px;
     padding:20px;   
     background: url("wallpaper2.webp");
-    background-repeat: no-repeat;
-    background-size: cover; 
+   
+
+
+    
     
 }
 
@@ -304,11 +311,13 @@ span {
     justify-content: center;
     align-items: center;
     font-size: 30px;
-   
+    background-image: linear-gradient(30deg, #fff, #16d10f, #e6d00e, #e91fac );
     margin-bottom: 50px;
     width: 100%;
-    border-radius: 10%;
-    background: black;
+    
+    background: wheat;
+    background: url("wallpaper2.webp");
+   
     
    
 }
@@ -319,9 +328,10 @@ span {
     color: aqua;
     background-image: linear-gradient(30deg, #fff, #16d10f, #e6d00e, #e91fac );
     padding: 0.125em 0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     width: fit-content;
-	margin: 1em;
+    margin: 0.3em;
+    background: black;
   }
 
 .revcontainer{
@@ -338,7 +348,7 @@ span {
     position: relative;
     max-width: 300px;
     height: 200px;
-    background: wheat;
+    background: white;
     margin: 30px 10px;
     padding: 20px 15px;
     display: flex;
