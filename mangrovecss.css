@@ -310,11 +310,11 @@ span {
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    background-image: linear-gradient(30deg, #fff, #16d10f, #e6d00e, #e91fac );
+    
     margin-bottom: 50px;
     width: 100%;
     
-    background: wheat;
+   
     background: url("wallpaper2.webp");
    
     
@@ -347,7 +347,7 @@ span {
     position: relative;
     max-width: 300px;
     height: 200px;
-    background: white;
+    background: wheat;
     margin: 30px 10px;
     padding: 20px 15px;
     display: flex;
